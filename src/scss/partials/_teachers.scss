@@ -1,0 +1,514 @@
+.teachers{
+  padding-top: 70px;
+  h1{
+    color: #2f2f2f;
+    width: 30%;
+    display: flex;
+    align-items: center;
+  }
+  &__subtitle{
+    margin: 0;
+    color: #6b6b6b;
+    display: inline-block;
+    span{
+      font-weight: 500;
+      padding-right: 23px;
+      position: relative;
+      cursor: pointer;
+      &:after{
+        content: "";
+        position: absolute;
+        width: 17px;
+        background-size: cover;
+        height: 17px;
+        top: 50%;
+        background-image: url("../img/Button_ Info_ Light.png");
+        transform: translateY(-50%);
+        right: 0;
+      }
+    }
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__time-line{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  &__time-btn{
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 22px;
+    color: #50bdb0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: opacity .5s ease;
+    background-image: url(../img/add2.svg);
+    background-size: 10%;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-position-x: 8px;
+    margin-top: 10px;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  &__time-range{
+    width: 100%;
+  }
+  &__filters{
+    background: rgba(255,255,255,0.5);
+    padding:20px 23px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 40px #e0e0e03b;
+    padding-bottom: 20px;
+  }
+  &__field{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsla(0, 0%, 94%, 0.9);
+    position: relative;
+    &:first-child{
+      padding-top: 0;
+      border:0;
+    }
+    &:last-child{
+      border: 0;
+    }
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__banners{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__banner{
+    width: 48.5%;
+    padding: 20px;
+    background-color: hsla(0,0%,100%,.5);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all 0.5s ease;
+  }
+  &__banner-close{
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 0;
+      right: 20px;
+      opacity: 0.7;
+      background-image: url(../img/add1.svg);
+      top: 20px;
+      transform: rotate(45deg);
+      cursor: pointer;
+      transition: opacity 0.5s ease;
+      &:hover{
+        opacity: 1;
+      }
+  }
+  &__banner-title{
+    font-weight: 500;
+    color: #2f2f2f;
+    font-size: 17px;
+    margin: 0;
+    line-height: 28px;
+    span{
+      font-size: 28px;
+      color: #44bb42;
+      font-weight: 500;
+      margin-right: 5px;
+    }
+  }
+  &__banner-text{
+    font-size: 13px;
+  }
+  &__form-field{
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  &__main-content{
+    width: 68%;
+  }
+  &__item{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 40px #e0e0e03b;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  &__item-left{
+    width: 55%;
+    border-right: 1px solid hsla(0, 0%, 100%, 0.55);
+    display: flex;
+    position: relative;
+  }
+  &__item-right{
+    width: 45%;
+    padding-left: 20px;
+  }
+  &__tabs-item{
+    font-size: 13px;
+    border-right: 1px solid #c1c1c1;
+    padding-right: 30px;
+    cursor: pointer;
+    opacity: 0.7;
+    color: #2f2f2f;
+    transition: opacity 0.5s ease;
+
+    &--active{
+      font-weight: 500;
+      opacity: 1;
+    }
+    &:hover{
+      opacity: 0.7;
+    }
+    &:last-child{
+      padding: 0;
+      border:0;
+    }
+  }
+  &__tabs-list{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  &__tabs-content{
+    margin-top: 20px;
+    height: 100%;
+
+    &--video, &--schedule{
+      display: none;
+    }
+    p{
+      font-size: 14px;
+      line-height: 1.5;
+      color: #545454;
+    }
+  }
+  &__calendar-body{
+    margin-bottom: 10px;
+  }
+  &__calendar-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  &__calendar-hours{
+    font-size: 12px;
+    color: #505050;
+    width: 40px;
+    letter-spacing: 0.05em;
+    display: inline-block;
+  }
+  &__calendar-availability{
+    flex:1;
+  }
+  &__calendar-no-availability{
+    background: hsla(0, 0%, 76%, 0.5);
+  }
+  &__calendar-low-availability{
+    background: rgba(108, 208, 196, 0.42);
+  }
+  &__calendar-high-availability{
+    background: #6cd0c4;
+  }
+  &__calendar-row{
+    display: flex;
+    margin-bottom: 6px;
+  }
+  &__calendar-no-availability, &__calendar-high-availability, &__calendar-low-availability{
+    display: block;
+    margin: 0 auto;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  &__calendar-info{
+    font-size: 12px;
+    opacity: 0.6;
+  }
+  &__calendar-day{
+    font-size: 12px;
+    flex: 1;
+    text-align: center;
+    color: #505050;
+  }
+  &__tabs{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__teacher-name{
+    font-weight: 500;
+    color: #2f2f2f;
+    font-size: 17px;
+  }
+  &__teacher-field{
+    display: flex;
+    align-items: center;
+  }
+  &__teacher-info{
+    padding-left: 20px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    .alert{
+      left: -56px;
+    }
+  }
+  &__teacher-paymnt{
+    margin-bottom: 10px;
+    p{
+      font-size: 13px;
+      margin: 0;
+      &:first-child{
+        margin-bottom: 5px;
+        span{
+          color: #44bb42;
+          font-size: 14px;
+        }
+      }
+      span{
+        font-weight: 500;
+      }
+    }
+  }
+  &__tags-list{
+    background: hsla(0,0%,100%,.45);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    padding-top: 30px;
+    position: relative;
+    display: none;
+  }
+  &__tags-item{
+    font-size: 14px;
+    background-color: hsla(0,0%,100%,.5);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 24px;
+    cursor: pointer;
+    color: #191919;
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 24px;
+    &:hover{
+      background-color: #fff;
+      opacity: 1;
+    }
+    &:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 10px;
+    background-image: url(../img/add1.svg);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  }
+  &__tags-list-close{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: 10px;
+    opacity: .7;
+    background-image: url(../img/add1.svg);
+    top: 10px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: opacity .5s ease;
+}
+  &__teacher-tags{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    .teachers__tag{
+      background-color: hsla(0, 0%, 100%, 0.5);
+      padding-left: 10px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      color: #5d5d5d;
+    }
+  }
+  &__teacher-like{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-image: url("../img/heart1.svg");
+    right: 20px;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+    &:hover{opacity: 0.8}
+  }
+  &__teacher-flag{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-size: cover;
+    z-index: 9999;
+    background-image: url("../img/canada.svg");
+    margin-right: 20px;
+  }
+  &__btn{
+    width: 100%;
+    border-radius: 10px;
+    background: #6cd0c4;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    transition: opacity 0.5s ease;
+    &:hover{
+      opacity: 0.7
+    }
+  }
+  &__exprnce{
+    margin-top: auto;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  &__exprnce-number{
+    font-size: 14px;
+  }
+  &__exprnce-line{
+    text-align: center;
+    margin: 0;
+    margin-right: 10px;
+  }
+  &__exprnce-les, &__exprnce-rev{
+    display: block;
+    font-size: 12px;
+  }
+  &__photo{
+    width: 120px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    img{
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+  }
+  &__input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    background: hsla(0, 0%, 100%, 0.49);
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    &--search{
+      background-image: url("../img/Glyph_\ Search.png");
+      background-repeat: no-repeat;
+      background-position-x: 10px;
+      background-position-y: center;
+      background-size: 3.5%;
+      padding-left: 31px;
+      line-height: 1;
+    }
+  }
+  &__info{
+    width: 17px;
+    background-size: cover;
+    height: 17px;
+    background-image: url("../img/Button_ Info_ Light.png");
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  &__label{
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 500;
+  }
+  &__checkbox-label{
+    font-size: 14px;
+  }
+  &__checkbox{
+    display: none;
+  }
+  &__checkbox + label {
+  position: relative;
+  padding: 0 0 0 27px;
+  cursor: pointer;
+  }
+  &__checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/Checkbox_ Inactive_ Off.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .2s;
+  }
+  &__checkbox:checked + label:before {
+  background-image: url("../img/Checkbox_ Inactive_ On.png");
+  }
+  &__tag{
+    font-size: 13px;
+    background-color:hsla(0, 0%, 100%, 0.5);
+    padding: 10px;
+    padding-left: 24px;
+    color: #50bdb0;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+    position: relative;
+    &:hover{
+      opacity: 0.7;
+    }
+    &--btn{
+      background-image: url(../img/add2.svg);
+      background-size: 10%;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-color: rgba(255, 255, 255, 0.7);
+      background-position-x: 8px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    &--text{
+      position: relative;
+      padding-left: 10px;
+      padding-right: 24px;
+      cursor: pointer;
+      color: #5d5d5d;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 10px;
+        background-image: url(../img/add2.svg);
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+      }
+    }
+  }
+}

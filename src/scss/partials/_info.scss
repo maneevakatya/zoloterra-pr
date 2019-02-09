@@ -1,0 +1,50 @@
+.info{
+  display: flex;
+
+  &__message{
+    background-image: url("../img/conversation-speech-bubbles-.svg");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  &__notification{
+    background-image: url("../img/notification1.svg");
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  &__person{
+    margin-left: auto;
+    cursor: pointer;
+    position: relative;
+    padding-right: 15px;
+
+    &:hover{
+      opacity: 0.7;
+    }
+    &--active{
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+    &:before{
+      content: "";
+      position: absolute;
+      width: 10px;
+      right: 0;
+      height: 10px;
+      top: 50%;
+      background-image: url(../img/download.svg);
+      transform: translateY(-50%);
+    }
+    span{
+      font-weight: 500;
+      font-size: 14px;
+      color: #2f2f2f;
+    }
+  }
+}

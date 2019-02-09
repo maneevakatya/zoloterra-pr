@@ -1,0 +1,40 @@
+//----------------------------------*\
+// SCSS MIXINS
+//----------------------------------*/
+
+
+//----------------------------------*\
+// CONFIG MODULES
+//----------------------------------*/
+
+// Config modules
+@import 'modules/_clearfix.scss';
+@import 'modules/_defaults.scss';
+@import 'modules/_normalize.scss';
+//----------------------------------*\
+// PARTIALS
+//----------------------------------*/
+
+@import 'partials/_header.scss';
+@import 'partials/_nav.scss';
+@import 'partials/_info.scss';
+@import 'partials/_alert.scss';
+@import 'partials/_courses.scss';
+@import 'partials/_current-course.scss';
+@import 'partials/_statistics.scss';
+@import 'partials/_user-menu.scss';
+@import 'partials/_teachers.scss';
+@import 'partials/_footer.scss';
+
+//----------------------------------*\
+// OBJECTS & MODULES
+//----------------------------------*/
+@import 'modules/_typography.scss';
+
+// Enhancement modules
+@import 'modules/_breakpoints.scss';;
+
+//----------------------------------*\
+// VENDOR
+//----------------------------------*/
+;

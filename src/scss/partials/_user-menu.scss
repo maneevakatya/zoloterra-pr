@@ -1,0 +1,41 @@
+.user-menu{
+display: none;
+position: absolute;
+font-size: 14px;
+background: rgba(255, 255, 255, 0.92);
+padding: 10px;
+right: 0;
+border-radius: 10px;
+top: 120%;
+width: 140px;
+z-index: 999;
+padding-top: 20px;
+padding-bottom: 20px;
+
+  &--active{
+    display: block;
+  }
+  span{
+    color: #44bb42;
+    font-size: 17px;
+    padding-top: 10px;
+  }
+
+  &:hover{
+    opacity: 1;
+  }
+
+  &__item{
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2f2f2f;
+
+    &:hover{
+      opacity: 0.8;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

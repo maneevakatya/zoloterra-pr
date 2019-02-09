@@ -1,0 +1,21 @@
+.alert{
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 9999;
+  width: 200px;
+  top: -2px;
+  left: 5px;
+  font-size: 14px;
+  left: -41px;
+  box-shadow: 0 0 15px #efefef;
+  p{
+    margin: 0;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

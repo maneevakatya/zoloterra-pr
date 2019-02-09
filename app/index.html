@@ -1,0 +1,572 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="assets/css/swiper.css" rel="stylesheet">
+    <link href="assets/css/fancy.css" rel="stylesheet">
+    <link href="assets/css/ion.rangeSlider.min.css" rel="stylesheet">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+    <link href="assets/css/jquery.formstyler.css" rel="stylesheet">
+    <script src="assets/components/jquery/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+    <div class="header__wrapper wrapper">
+    <div class="header__logo">
+      <img src="assets/img/logo_top.png">
+    </div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Курсы</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Продолжить</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Категории</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Преподаватели</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Поиск</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Избранные</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Расписание</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Прошедшие уроки</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Словарь</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="info">
+      <div class="info__message">
+      </div>
+      <div class="info__notification">
+      </div>
+      <div class="info__person">
+        <span>Соня</span>
+        <div class="user-menu">
+          <ul class="user-menu__list">
+            <li class="user-menu__item">Баланс: <span>0 руб</span></li>
+            <li class="user-menu__item">Профиль</li>
+            <li class="user-menu__item">FAQ</li>
+            <li class="user-menu__item">Поддержка</li>
+            <li class="user-menu__item">Выход</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <div class="teachers">
+        <div class="teachers__content">
+          <div class="teachers__filters">
+            <form class="teachers__form">
+             <div class="teachers__field teachers__field">
+              <div class="teachers__subtitle subtitle">Ваш уровень: <span>Beginner</span>
+                <div class="alert">
+                  <p>Ваш текущий уровень - <b>Beginner</b>.</p>
+                  <p>Вы можете изменить уровень в настройках профиля.</p>
+                </div>
+              </div>
+            </div>
+            <div class="teachers__field">
+             <input class="teachers__input teachers__input--search" type="text" placeholder="ФИО преподавателя">
+           </div>
+           <div class="teachers__field">
+             <label class="teachers__label">Стоимость</label>
+             <input class="teachers__input js-range-slider js-range-price" type="text" data-min="300" data-max="3000">
+          </div>
+          <div class="teachers__field teachers__field--time">
+            <label class="teachers__label">Удобное время занятий</label>
+            <div class="teachers__time-field">
+            <div class="teachers__time-line">
+            <select>
+              <option>Пн</option>
+              <option>Вт</option>
+              <option>Ср</option>
+              <option>Чт</option>
+              <option>Пт</option>
+              <option>Сб</option>
+              <option>Вс</option>
+            </select>
+            <div class="teachers__time-range"><input class="teachers__input js-range-slider js-range-time" type="text" data-min="0:00" data-max="23:59"></div>
+          </div>
+          <div class="teachers__time-line">
+          <select>
+            <option>Пн</option>
+            <option>Вт</option>
+            <option>Ср</option>
+            <option>Чт</option>
+            <option>Пт</option>
+            <option>Сб</option>
+            <option>Вс</option>
+          </select>
+          <div class="teachers__time-range"><input class="teachers__input js-range-slider js-range-time" type="text" data-min="0:00" data-max="23:59"></div>
+        </div>
+            <button class="teachers__time-btn" type="button">добавить</button>
+          </div>
+         </div>
+         <div class="teachers__field">
+           <div class="teachers__form-field">
+            <input class="teachers__checkbox" type="checkbox" id="checkbox1">
+            <label class="teachers__checkbox-label" for="checkbox1">Репетитор</label>
+           </div>
+           <div class="teachers__form-field">
+            <input class="teachers__checkbox" type="checkbox" id="checkbox2">
+            <label class="teachers__checkbox-label" for="checkbox2">Сертифицированный педагог </label>
+          </div>
+          <div class="teachers__form-field">
+            <input class="teachers__checkbox" type="checkbox" id="checkbox3">
+            <label class="teachers__checkbox-label" for="checkbox3">Носитель языка</label>
+            <div class="teachers__info">
+              <div class="alert">
+                <p>Носитель языка - человек, для которого данный язык является родным.</p>
+              </div>
+            </div>
+          </div>
+         </div>
+         <div class="teachers__field">
+           <label class="teachers__label">Специализация преподавателя</label>
+           <div class="teachers__tags">
+             <span class="teachers__tag teachers__tag--text">IELTS</span>
+             <span class="teachers__tag teachers__tag--text">TOEFL</span>
+             <button class="teachers__tag teachers__tag--btn" type="button">добавить</button>
+           </div>
+           <div class="teachers__tags-list">
+             <span class="teachers__tags-list-close"></span>
+             <div class="teachers__tags-item">Начинающие</div>
+             <div class="teachers__tags-item">Подростки</div>
+             <div class="teachers__tags-item">Дети</div>
+             <div class="teachers__tags-item">Деловой язык</div>
+             <div class="teachers__tags-item">TOEIC</div>
+             <div class="teachers__tags-item">FCE</div>
+          </div>
+         </div>
+         <div class="teachers__field">
+           <label class="teachers__label">Преподаватель говорит на:</label>
+           <div class="teachers__form-field">
+            <input class="teachers__checkbox" type="checkbox" id="checkbox4">
+            <label class="teachers__checkbox-label" for="checkbox4">Русский</label>
+           </div>
+         </div>
+         <div class="teachers__field">
+           <button class="teachers__btn" type="submit">Поиск</button>
+         </div>
+            </form>
+          </div>
+          <div class="teachers__main-content">
+          <div class="teachers__banners">
+            <div class="teachers__banner">
+              <span class="teachers__banner-close"></span>
+              <p class="teachers__banner-title"><span>100%</span> гарантия качества</p>
+              <p class="teachers__banner-text">Ваши денежные средства остаются в полной безопасности на сайте, пока вы не подтвердите, что урок был успешно завершен.</p>
+            </div>
+            <div class="teachers__banner">
+              <span class="teachers__banner-close"></span>
+              <p class="teachers__banner-title">Возврат средств</p>
+              <p class="teachers__banner-text">Вы всегда можете вернуть деньги при отмене урока за 16 часов до начала.</p>
+            </div>
+          </div>
+          <ul class="teachers__list">
+            <li class="teachers__item">
+              <div class="teachers__item-left">
+                <div class="teachers__photo">
+                  <img src="assets/img/teacher.jpg">
+                  <div class="teachers__exprnce">
+                    <p class="teachers__exprnce-line"><span class="teachers__exprnce-les">Уроки:</span><span class="teachers__exprnce-number">234</span></p>
+                    <p class="teachers__exprnce-line"><span class="teachers__exprnce-rev">Отзывы:</span><span class="teachers__exprnce-number">123</span></p>
+                  </div>
+                </div>
+                <div class="teachers__teacher-info">
+                  <span class="teachers__teacher-like"></span>
+                  <div class="teachers__teacher-field">
+                  <span class="teachers__teacher-flag"></span>
+                  <p class="teachers__teacher-name">Райан Гослинг</p>
+                  </div>
+                  <div class="teachers__teacher-paymnt">
+                    <p>Пробный урок: <span>бесплатно</span></p>
+                    <p>Ставка за час: <span>1000 руб</span></p>
+                  </div>
+                  <div class="teachers__teacher-tags">
+                    <span class="teachers__tag">IELTS</span>
+                    <span class="teachers__tag">TOEFL</span>
+                    <span class="teachers__tag">Подростки</span>
+                    <span class="teachers__tag">KET</span>
+                    <span class="teachers__tag">PET</span>
+                  </div>
+                </div>
+              </div>
+              <div class="teachers__item-right">
+                <div class="teachers__tabs">
+                  <ul class="teachers__tabs-list">
+                    <li class="teachers__tabs-item teachers__tabs-item--schedule">Расписание</li>
+                    <li class="teachers__tabs-item teachers__tabs-item--video">Видео</li>
+                    <li class="teachers__tabs-item teachers__tabs-item--active teachers__tabs-item--about">О себе</li>
+                  </ul>
+                  <div class="teachers__tabs-content teachers__tabs-content--about">
+                    <p>I'm a friendly , optimistic and easy going person. I love working with people and teaching is my passion. I'm a friendly , optimistic and easy going person. I love working with people and teaching is my passion.</p>
+                  </div>
+                  <div class="teachers__tabs-content teachers__tabs-content--video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jiTg7edpNcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                <div class="teachers__tabs-content teachers__tabs-content--schedule">
+                  <div class="teachers__calendar">
+                    <div class="teachers__calendar-header">
+                      <span class="teachers__calendar-day"></span>
+                      <span class="teachers__calendar-day">Пн</span>
+                      <span class="teachers__calendar-day">Вт</span>
+                      <span class="teachers__calendar-day">Ср</span>
+                      <span class="teachers__calendar-day">Чт</span>
+                      <span class="teachers__calendar-day">Пт</span>
+                      <span class="teachers__calendar-day">Сб</span>
+                      <span class="teachers__calendar-day">Вс</span>
+                    </div>
+                    <div class="teachers__calendar-body">
+                      <div class="teachers__calendar-row">
+                        <span class="teachers__calendar-hours">00-04</span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      </div>
+                      <div class="teachers__calendar-row">
+                        <span class="teachers__calendar-hours">04-08</span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      </div>
+                      <div class="teachers__calendar-row">
+                        <span class="teachers__calendar-hours">08-12</span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      </div>
+                      <div class="teachers__calendar-row">
+                        <span class="teachers__calendar-hours">12-16</span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      </div>
+                      <div class="teachers__calendar-row">
+                        <span class="teachers__calendar-hours">16-20</span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      </div>
+                      <div class="teachers__calendar-row">
+                        <span class="teachers__calendar-hours">20-00</span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                        <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      </div>
+                    </div>
+                    <span class="teachers__calendar-info">На основании вашего часового пояса</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </li>
+            <li class="teachers__item">
+              <div class="teachers__item-left">
+                <div class="teachers__photo">
+                  <img src="assets/img/teacher.jpg">
+                  <div class="teachers__exprnce">
+                    <p class="teachers__exprnce-line"><span class="teachers__exprnce-les">Уроки:</span><span class="teachers__exprnce-number">234</span></p>
+                    <p class="teachers__exprnce-line"><span class="teachers__exprnce-rev">Отзывы:</span><span class="teachers__exprnce-number">123</span></p>
+                  </div>
+                </div>
+                <div class="teachers__teacher-info">
+                  <span class="teachers__teacher-like"></span>
+                  <div class="teachers__teacher-field">
+                  <span class="teachers__teacher-flag"></span>
+                  <p class="teachers__teacher-name">Райан Гослинг</p>
+                  </div>
+                  <div class="teachers__teacher-paymnt">
+                    <p>Пробный урок: <span>бесплатно</span></p>
+                    <p>Ставка за час: <span>1000 руб</span></p>
+                  </div>
+                  <div class="teachers__teacher-tags">
+                    <span class="teachers__tag">IELTS</span>
+                    <span class="teachers__tag">TOEFL</span>
+                    <span class="teachers__tag">Подростки</span>
+                    <span class="teachers__tag">KET</span>
+                    <span class="teachers__tag">PET</span>
+                  </div>
+                </div>
+              </div>
+              <div class="teachers__item-right">
+                <div class="teachers__tabs">
+                  <ul class="teachers__tabs-list">
+                    <li class="teachers__tabs-item">Расписание</li>
+                    <li class="teachers__tabs-item">Видео</li>
+                    <li class="teachers__tabs-item teachers__tabs-item--active">О себе</li>
+                  </ul>
+                  <div class="teachers__tabs-content teachers__tabs-content--about">
+                    <p>I'm a friendly , optimistic and easy going person. I love working with people and teaching is my passion. I'm a friendly , optimistic and easy going person. I love working with people and teaching is my passion.</p>
+                  </div>
+                <div class="teachers__tabs-content teachers__tabs-content--video">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jiTg7edpNcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              <div class="teachers__tabs-content teachers__tabs-content--schedule">
+                <div class="teachers__calendar">
+                  <div class="teachers__calendar-header">
+                    <span class="teachers__calendar-day"></span>
+                    <span class="teachers__calendar-day">Пн</span>
+                    <span class="teachers__calendar-day">Вт</span>
+                    <span class="teachers__calendar-day">Ср</span>
+                    <span class="teachers__calendar-day">Чт</span>
+                    <span class="teachers__calendar-day">Пт</span>
+                    <span class="teachers__calendar-day">Сб</span>
+                    <span class="teachers__calendar-day">Вс</span>
+                  </div>
+                  <div class="teachers__calendar-body">
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">00-04</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                    </div>
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">04-08</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                    </div>
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">08-12</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                    </div>
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">12-16</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                    </div>
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">16-20</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                    </div>
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">20-00</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                    </div>
+                  </div>
+                  <span class="teachers__calendar-info">На основании вашего часового пояса</span>
+                </div>
+              </div>
+            </div>
+              </div>
+            </li>
+            <li class="teachers__item">
+              <div class="teachers__item-left">
+                <div class="teachers__photo">
+                  <img src="assets/img/teacher.jpg">
+                  <div class="teachers__exprnce">
+                    <p class="teachers__exprnce-line"><span class="teachers__exprnce-les">Уроки:</span><span class="teachers__exprnce-number">234</span></p>
+                    <p class="teachers__exprnce-line"><span class="teachers__exprnce-rev">Отзывы:</span><span class="teachers__exprnce-number">123</span></p>
+                  </div>
+                </div>
+                <div class="teachers__teacher-info">
+                  <span class="teachers__teacher-like"></span>
+                  <div class="teachers__teacher-field">
+                  <span class="teachers__teacher-flag"></span>
+                  <p class="teachers__teacher-name">Райан Гослинг</p>
+                  </div>
+                  <div class="teachers__teacher-paymnt">
+                    <p>Пробный урок: <span>бесплатно</span></p>
+                    <p>Ставка за час: <span>1000 руб</span></p>
+                  </div>
+                  <div class="teachers__teacher-tags">
+                    <span class="teachers__tag">IELTS</span>
+                    <span class="teachers__tag">TOEFL</span>
+                    <span class="teachers__tag">Подростки</span>
+                    <span class="teachers__tag">KET</span>
+                    <span class="teachers__tag">PET</span>
+                  </div>
+                </div>
+              </div>
+              <div class="teachers__item-right">
+                <div class="teachers__tabs">
+                  <ul class="teachers__tabs-list">
+                    <li class="teachers__tabs-item">Расписание</li>
+                    <li class="teachers__tabs-item">Видео</li>
+                    <li class="teachers__tabs-item teachers__tabs-item--active">О себе</li>
+                  </ul>
+                  <div class="teachers__tabs-content teachers__tabs-content--about">
+                    <p>I'm a friendly , optimistic and easy going person. I love working with people and teaching is my passion. I'm a friendly , optimistic and easy going person. I love working with people and teaching is my passion.</p>
+                  </div>
+                <div class="teachers__tabs-content teachers__tabs-content--video">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jiTg7edpNcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              <div class="teachers__tabs-content teachers__tabs-content--schedule">
+                <div class="teachers__calendar">
+                  <div class="teachers__calendar-header">
+                    <span class="teachers__calendar-day"></span>
+                    <span class="teachers__calendar-day">Пн</span>
+                    <span class="teachers__calendar-day">Вт</span>
+                    <span class="teachers__calendar-day">Ср</span>
+                    <span class="teachers__calendar-day">Чт</span>
+                    <span class="teachers__calendar-day">Пт</span>
+                    <span class="teachers__calendar-day">Сб</span>
+                    <span class="teachers__calendar-day">Вс</span>
+                  </div>
+                  <div class="teachers__calendar-body">
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">00-04</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                    </div>
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">04-08</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                    </div>
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">08-12</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                    </div>
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">12-16</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                    </div>
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">16-20</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                    </div>
+                    <div class="teachers__calendar-row">
+                      <span class="teachers__calendar-hours">20-00</span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-no-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-low-availability"></span></span>
+                      <span class="teachers__calendar-availability"><span class="teachers__calendar-high-availability"></span></span>
+                    </div>
+                  </div>
+                  <span class="teachers__calendar-info">На основании вашего часового пояса</span>
+                </div>
+              </div>
+              </div>
+              </div>
+            </li>
+            <li class="teachers__item">
+            </li>
+            <li class="teachers__item">
+            </li>
+            <li class="teachers__item">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+    <script src="assets/js/numbers.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/jquery.formstyler.min.js"></script>
+    <script src="assets/js/scripts.min.js"></script>
+  </body>
+</html>
