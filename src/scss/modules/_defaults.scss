@@ -9,7 +9,7 @@ html {
 body {
 font-family: "SF", sans-serif;
 background: linear-gradient(#6d4bd652,#8de8cb);
-background: linear-gradient(#b3d4d652,#998ac59e);
+background: linear-gradient(#b3d4d652,#6d51bba3);
 //background:linear-gradient(#6d4bd640,#8de8cb)
 }
 body.page{
@@ -34,8 +34,21 @@ button{
   outline-color: transparent;
   cursor: pointer;
 }
+.btn{
+  display: block;
+  border-radius: 10px;
+  background: #6cd0c4;
+  background: #3ad0ab;
+  height: 40px;
+  color: #fff;
+  line-height: 40px;
+  transition: opacity .5s ease;
+  &:hover{
+    opacity: 0.7
+  }
+}
 .wrapper{
-  max-width: 1200px;
+  max-width: 1350px;
   width: 100%;
   margin: 0 auto;
 }
@@ -58,16 +71,16 @@ button{
 }
 .irs--flat .irs-bar{
   height: 2px;
-  background-color: #6cd0c4;
+  background-color: #3ad0ab;
 }
 .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single{
-  background-color: #6cd0c4;
+  background-color: #3ad0ab;
   font-size: 11px;
   line-height: 1;
   padding: 3px 5px;
 }
 .irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before{
-  border-top-color: #6cd0c4;
+  border-top-color: #3ad0ab;
 }
 .irs--flat .irs-handle>i:first-child{
   background-color: #fff;

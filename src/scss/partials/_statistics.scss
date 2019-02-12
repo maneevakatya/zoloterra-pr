@@ -1,10 +1,48 @@
 .statistics{
-  padding: 30px 0;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
 
 &__list{
   display: flex;
   justify-content: space-between;
+}
+&__number{
+  color: #835fa9;
+  font-size: 40px;
+  font-family: Stem;
+  display: block;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+&__text{
+  font-size: 14px;
+  width: 80%;
+  color: #835fa9;
+}
+&__item{
+  width: 130px;
+  text-align: center;
+  height: 130px;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 19px;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  &:last-child:before{
+    content:none;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    width: 255px;
+    height: 1px;
+    left: 100%;
+    background: #3ad0ab;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 }

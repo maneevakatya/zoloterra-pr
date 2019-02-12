@@ -25,7 +25,9 @@ $(".teachers__banner-close").click(function(e) {
 $(".teachers__tag--text").click(function(e) {
   $(this).hide();
 });
-
+$(".teachers__teacher-like").click(function(e) {
+  $(this).toggleClass("liked");
+});
 $(".info__person").click(function(e) {
   $(this).toggleClass("info__person--active");
   $(".user-menu").toggleClass("user-menu--active");
