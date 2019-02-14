@@ -22,7 +22,7 @@ $(".js-range-time").ionRangeSlider({
 $(".teachers__banner-close").click(function(e) {
   $(this).parent().hide();
 });
-$(".teachers__tag--text").click(function(e) {
+$(".teachers__tag").click(function(e) {
   $(this).hide();
 });
 $(".teachers__teacher-like").click(function(e) {
@@ -64,7 +64,7 @@ $(".teachers__tag--btn").click(function(e) {
 });
 
 
-$(".courses__item-btn--info").click(function(e) {
+$(".courses__item-btn").click(function(e) {
   $(".courses__info").hide();
   $(this).parent().parent().css("max-height", "1500px");
   $(this).parent().parent().children(".courses__info").show();

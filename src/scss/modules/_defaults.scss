@@ -3,17 +3,18 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-html {
-
-}
+$primary-color: #3ad0ab;
+$second-color:#835fa9;
+$font-color:#2f2f2f;
 body {
 font-family: "SF", sans-serif;
 background: linear-gradient(#6d4bd652,#8de8cb);
-background: linear-gradient(#b3d4d652,#6d51bba3);
+background: linear-gradient(rgba(179, 212, 214, 0.32),rgba(109, 81, 187, 0.63));
+//background:linear-gradient(rgba(179, 212, 214, 0.32),rgba(109, 81, 187, 0.52));
 //background:linear-gradient(#6d4bd640,#8de8cb)
 }
-body.page{
-  background: #fff;
+body.bg-light{
+  background:linear-gradient(rgba(179,212,214,.32),rgba(109, 81, 187, 0.17),rgba(179,212,214,.32));
 }
 body,html{
 	min-height: 100vh;
@@ -37,14 +38,43 @@ button{
 .btn{
   display: block;
   border-radius: 10px;
-  background: #6cd0c4;
-  background: #3ad0ab;
+  background: $primary-color;
   height: 40px;
   color: #fff;
   line-height: 40px;
   transition: opacity .5s ease;
   &:hover{
     opacity: 0.7
+  }
+}
+.btn-add{
+  font-size: 12px;
+  padding: 10px;
+  padding-left: 22px;
+  color: $primary-color;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: opacity .5s ease;
+  background-image: url(../img/add2.svg);
+  background-size: 10%;
+  background-color: hsla(0,0%,100%,.87);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-position-x: 8px;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+.btn-more{
+  font-weight: 500;
+  margin-left: auto;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: $second-color;
+  &:hover{
+    opacity: 0.7;
   }
 }
 .wrapper{
@@ -71,16 +101,16 @@ button{
 }
 .irs--flat .irs-bar{
   height: 2px;
-  background-color: #3ad0ab;
+  background-color:$primary-color;
 }
 .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single{
-  background-color: #3ad0ab;
+  background-color: $primary-color;
   font-size: 11px;
   line-height: 1;
   padding: 3px 5px;
 }
 .irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before{
-  border-top-color: #3ad0ab;
+  border-top-color: $primary-color;
 }
 .irs--flat .irs-handle>i:first-child{
   background-color: #fff;
@@ -104,7 +134,7 @@ button{
 .jq-selectbox__select-text{
   font-size: 13px;
   font-weight: 500;
-  color: #2f2f2f;
+  color: $font-color;
 }
 .jq-selectbox__select{
   padding-right: 10px;

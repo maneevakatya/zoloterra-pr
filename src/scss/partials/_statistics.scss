@@ -1,3 +1,4 @@
+$second-color:#835fa9;
 .statistics{
   margin-bottom: 50px;
 
@@ -6,7 +7,7 @@
   justify-content: space-between;
 }
 &__number{
-  color: #835fa9;
+  color: $second-color;
   font-size: 40px;
   font-family: Stem;
   display: block;
@@ -16,7 +17,7 @@
 &__text{
   font-size: 14px;
   width: 80%;
-  color: #835fa9;
+  color: $second-color;
 }
 &__item{
   width: 130px;
@@ -40,7 +41,7 @@
     width: 255px;
     height: 1px;
     left: 100%;
-    background: #3ad0ab;
+    background: $primary-color;
     top: 50%;
     transform: translateY(-50%);
   }

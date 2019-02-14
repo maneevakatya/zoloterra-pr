@@ -1,7 +1,9 @@
+$primary-color: #3ad0ab;
+$font-color:$font-color;
 .teachers{
   padding-top: 20px;
   h1{
-    color: #2f2f2f;
+    color: $font-color;
     width: 30%;
     display: flex;
     align-items: center;
@@ -39,24 +41,7 @@
     margin-bottom: 5px;
   }
   &__time-btn{
-    font-size: 12px;
-    padding: 10px;
-    padding-left: 22px;
-    color: #3ad0ab;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: opacity .5s ease;
-    background-image: url(../img/add2.svg);
-    background-size: 10%;
-    background-color: hsla(0,0%,100%,.87);
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-position-x: 8px;
     margin-top: 10px;
-    &:hover{
-      opacity: 0.7;
-    }
   }
   &__time-range{
     width: 100%;
@@ -96,6 +81,7 @@
     border-radius: 10px;
     position: relative;
     transition: all 0.5s ease;
+    margin-bottom: 20px;
     // padding-left: 70px;
     // &:before{
     //   content: "";
@@ -130,13 +116,13 @@
   }
   &__banner-title{
     font-weight: 500;
-    color: #2f2f2f;
+    color: $font-color;
     font-size: 17px;
     margin: 0;
     line-height: 28px;
     span{
       font-size: 28px;
-      color: #3ad0ab;
+      color: $primary-color;
       font-weight: 500;
       margin-right: 5px;
     }
@@ -177,10 +163,10 @@
   &__tabs-item{
     font-size: 13px;
     border-right: 1px solid #c1c1c1;
-    padding-right: 30px;
+    padding-right: 48px;
     cursor: pointer;
     opacity: 0.7;
-    color: #2f2f2f;
+    color: $font-color;
     transition: opacity 0.5s ease;
 
     &--active{
@@ -238,7 +224,7 @@
     background: rgba(58, 208, 171, 0.32);
   }
   &__calendar-high-availability{
-    background: #3ad0ab;
+    background: $primary-color;
   }
   &__calendar-row{
     display: flex;
@@ -268,13 +254,14 @@
   }
   &__teacher-name{
     font-weight: 500;
-    color: #2f2f2f;
+    color: $font-color;
     font-size: 17px;
   }
   &__teacher-type{
     font-size: 13px;
     margin-bottom: 29px;
     width: 70%;
+    color: #5a5a5a;
     position: relative;
     padding-left: 30px;
     &:before{
@@ -312,7 +299,7 @@
       font-size: 13px;
       margin: 0;
       font-weight: 500;
-      color: #2f2f2f;
+      color: $font-color;
       &:first-child{
         margin-bottom: 5px;
         span{
@@ -461,6 +448,13 @@
       line-height: 1;
     }
   }
+  &__search-result{
+    margin-bottom: 20px;
+    font-size: 14px;
+    span{
+      font-weight: 500;
+    }
+  }
   &__info{
     width: 17px;
     background-size: cover;
@@ -471,7 +465,7 @@
   }
   &__label{
     font-size: 14px;
-    color: #2f2f2f;
+    color: $font-color;
     margin-bottom: 20px;
     display: block;
     font-weight: 500;
@@ -508,40 +502,27 @@
     background-color:hsla(0, 0%, 100%, 0.5);
     padding: 10px;
     padding-left: 24px;
-    color: #3ad0ab;
+    color: $primary-color;
     border-radius: 10px;
     transition: opacity 0.5s ease;
     position: relative;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 24px;
+    cursor: pointer;
+    color: #5d5d5d;
     &:hover{
       opacity: 0.7;
     }
-    &--btn{
+    &:before{
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      right: 10px;
       background-image: url(../img/add2.svg);
-      background-size: 10%;
-      background-position-y: center;
-      background-repeat: no-repeat;
-      background-color: hsla(0,0%,100%,.87);
-      background-position-x: 8px;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 12px;
-    }
-    &--text{
-      position: relative;
-      padding-left: 10px;
-      padding-right: 24px;
-      cursor: pointer;
-      color: #5d5d5d;
-      &:before{
-        content: "";
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        right: 10px;
-        background-image: url(../img/add2.svg);
-        top: 50%;
-        transform: translateY(-50%) rotate(45deg);
-      }
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
     }
   }
 }

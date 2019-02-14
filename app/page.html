@@ -13,7 +13,7 @@
     <link href="assets/css/jquery.formstyler.css" rel="stylesheet">
     <script src="assets/components/jquery/jquery.min.js"></script>
   </head>
-  <body>
+  <body class="bg-light">
     <header class="header">
     <div class="header__wrapper wrapper">
     <div class="header__logo">
@@ -99,6 +99,7 @@
       <div class="current-course">
         <div class="current-course__content">
           <div class="current-course__content-left">
+            <span class="current-course__level courses__item-level--beginner">Beginner</span>
             <h1 class="current-course__name">Название курса</h1>
             <p class="current-course__text">Дело в том, что сублимация устойчиво осознаёт социальный объект. Психосоматика отталкивает оппортунический генезис. Важность этой функции подчеркивается тем фактом, что аутизм отталкивает феноменологический закон. Психоанализ противоречиво понимает закон, и это неудивительно, если речь о персонифицированном характере первичной социализации.</p>
             <div class="current-course__btns">
@@ -122,16 +123,22 @@
           </ul>
         </div>
         <ul class="courses__list">
-          <li class="courses__item">
+          <li class="courses__item courses__item--started">
             <div class="courses__item-top">
-              <p class="courses__item-title">Начатый курс</p>
+              <div class="courses__item-descr">
+                <p class="courses__item-title">Начатый курс</p>
+              </div>
+              <img src="assets/img/sport.jpg">
             </div>
             <div class="courses__item-bottom">
-              <p class="courses__item-text">На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.</p>
-              <button type="button" class="courses__item-btn courses__item-btn--info">Подробнее</button>
-              <button type="button" class="courses__item-btn">Перейти</button>
+              <div class="courses__item-info">
+                <span class="courses__item-level courses__item-level--beginner">Beginner</span>
+                <span class="courses__item-lessons">24 урока</span>
+              </div>
+              <p class="courses__item-text">Экстремум функции имеет интеллект. Цикл, не меняя концепции, изложенной выше, реально просветляет хорус.</p>
+              <button type="button" class="courses__item-btn btn-more">Подробнее</button>
             </div>
-            <div class="courses__item-progress"><span></span><div class="courses__item-percent">40% пройдено</div></div>
+            <div class="courses__item-progress"><span class="courses__item-bar"></span><div class="courses__item-percent">40% пройдено</div></div>
             <div class="courses__info">
               <button type="button" class="courses__info-close"></button>
               <div class="courses__info-content">
@@ -150,14 +157,20 @@
               </div>
             </div>
           </li>
-          <li class="courses__item">
+          <li class="courses__item courses__item--started">
             <div class="courses__item-top">
-              <p class="courses__item-title">Начатый курс</p>
+              <div class="courses__item-descr">
+                <p class="courses__item-title">Начатый курс</p>
+              </div>
+              <img src="assets/img/sport.jpg">
             </div>
             <div class="courses__item-bottom">
-              <p class="courses__item-text">На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.</p>
-              <button type="button" class="courses__item-btn courses__item-btn--info">Подробнее</button>
-              <button type="button" class="courses__item-btn">Перейти</button>
+            <div class="courses__item-info">
+              <span class="courses__item-level courses__item-level--travel">Путешествия</span>
+              <span class="courses__item-lessons">24 урока</span>
+            </div>
+              <p class="courses__item-text">Экстремум функции имеет интеллект. Цикл, не меняя концепции, изложенной выше, реально просветляет хорус.</p>
+              <button type="button" class="courses__item-btn btn-more">Подробнее</button>
             </div>
           <div class="courses__item-progress"><span></span><div class="courses__item-percent">40% пройдено</div></div>
           <div class="courses__info">
@@ -181,12 +194,18 @@
 
           <li class="courses__item courses__item--actual">
             <div class="courses__item-top">
-              <p class="courses__item-title">Наиболее актуальный курс</p>
+              <div class="courses__item-descr">
+                <p class="courses__item-title">Наиболее актуальный курс</p>
+              </div>
+              <img src="assets/img/sport.jpg">
             </div>
             <div class="courses__item-bottom">
-              <p class="courses__item-text">На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.</p>
-              <button type="button" class="courses__item-btn courses__item-btn--info">Подробнее</button>
-              <button type="button" class="courses__item-btn">Перейти</button>
+            <div class="courses__item-info">
+              <span class="courses__item-level courses__item-level--beginner">Beginner</span>
+              <span class="courses__item-lessons">24 урока</span>
+            </div>
+              <p class="courses__item-text">Экстремум функции имеет интеллект. Цикл, не меняя концепции, изложенной выше, реально просветляет хорус.</p>
+              <button type="button" class="courses__item-btn btn-more">Подробнее</button>
             </div>
             <div class="courses__item-progress"><span></span></div>
             <div class="courses__info">
@@ -209,12 +228,18 @@
           </li>
           <li class="courses__item courses__item--actual">
             <div class="courses__item-top">
-              <p class="courses__item-title">Наиболее актуальный курс</p>
+              <div class="courses__item-descr">
+                <p class="courses__item-title">Наиболее актуальный курс</p>
+                </div>
+              <img src="assets/img/sport.jpg">
             </div>
             <div class="courses__item-bottom">
-              <p class="courses__item-text">На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.</p>
-              <button type="button" class="courses__item-btn courses__item-btn--info">Подробнее</button>
-              <button type="button" class="courses__item-btn">Перейти</button>
+              <div class="courses__item-info">
+              <span class="courses__item-level courses__item-level--spoken">Разговорный</span>
+              <span class="courses__item-lessons">24 урока</span>
+            </div>
+              <p class="courses__item-text">Экстремум функции имеет интеллект. Цикл, не меняя концепции, изложенной выше, реально просветляет хорус.</p>
+              <button type="button" class="courses__item-btn btn-more">Подробнее</button>
             </div>
             <div class="courses__item-progress"><span></span></div>
             <div class="courses__info">
@@ -237,59 +262,89 @@
           </li>
           <li class="courses__item courses__item--done">
             <div class="courses__item-top">
-              <p class="courses__item-title">Пройденный курс</p>
+              <div class="courses__item-descr">
+                <p class="courses__item-title">Пройденный курс</p>
+              </div>
+              <img src="assets/img/sport.jpg">
             </div>
             <div class="courses__item-bottom">
-              <p class="courses__item-text">На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.</p>
-              <button type="button" class="courses__item-btn courses__item-btn--info">Подробнее</button>
-              <button type="button" class="courses__item-btn">Перейти</button>
+              <div class="courses__item-info">
+              <span class="courses__item-level courses__item-level--beginner">Beginner</span>
+              <span class="courses__item-lessons">24 урока</span>
+            </div>
+              <p class="courses__item-text">Экстремум функции имеет интеллект. Цикл, не меняя концепции, изложенной выше, реально просветляет хорус.</p>
+              <button type="button" class="courses__item-btn btn-more">Подробнее</button>
             </div>
             <div class="courses__item-progress"><span></span>  <div class="courses__item-percent">100% пройдено</div></div>
 
           </li>
           <li class="courses__item courses__item--done">
             <div class="courses__item-top">
-            <p class="courses__item-title">Пройденный курс</p>
+              <div class="courses__item-descr">
+                <p class="courses__item-title">Пройденный курс</p>
+              </div>
+            <img src="assets/img/sport.jpg">
             </div>
             <div class="courses__item-bottom">
-              <p class="courses__item-text">На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.</p>
-              <button type="button" class="courses__item-btn courses__item-btn--info">Подробнее</button>
-              <button type="button" class="courses__item-btn">Перейти</button>
+              <div class="courses__item-info">
+              <span class="courses__item-level courses__item-level--beginner">Beginner</span>
+              <span class="courses__item-lessons">24 урока</span>
+            </div>
+              <p class="courses__item-text">Экстремум функции имеет интеллект. Цикл, не меняя концепции, изложенной выше, реально просветляет хорус.</p>
+              <button type="button" class="courses__item-btn btn-more">Подробнее</button>
             </div>
             <div class="courses__item-progress"><span></span>  <div class="courses__item-percent">100% пройдено</div></div>
 
           </li>
           <li class="courses__item courses__item--inactive">
             <div class="courses__item-top">
-              <p class="courses__item-title">Курс, который пока не подходит</p>
+              <div class="courses__item-descr">
+                <p class="courses__item-title">Курс, который пока не подходит</p>
+              </div>
+              <img src="assets/img/sport.jpg">
             </div>
             <div class="courses__item-bottom">
-              <p class="courses__item-text">На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.</p>
-              <button type="button" class="courses__item-btn courses__item-btn--info">Подробнее</button>
-              <button type="button" class="courses__item-btn">Перейти</button>
+              <div class="courses__item-info">
+              <span class="courses__item-level courses__item-level--advanced">Advanced</span>
+              <span class="courses__item-lessons">24 урока</span>
+            </div>
+              <p class="courses__item-text">Экстремум функции имеет интеллект. Цикл, не меняя концепции, изложенной выше, реально просветляет хорус.</p>
+              <button type="button" class="courses__item-btn btn-more">Подробнее</button>
             </div>
             <div class="courses__item-progress"><span></span></div>
           </li>
           <li class="courses__item courses__item--inactive">
             <div class="courses__item-top">
-              <p class="courses__item-title">Курс, который пока не подходит</p>
+              <div class="courses__item-descr">
+                <p class="courses__item-title">Курс, который пока не подходит</p>
+              </div>
+              <img src="assets/img/sport.jpg">
             </div>
             <div class="courses__item-bottom">
-              <p class="courses__item-text">На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.</p>
-              <button type="button" class="courses__item-btn courses__item-btn--info">Подробнее</button>
-              <button type="button" class="courses__item-btn">Перейти</button>
+              <div class="courses__item-info">
+              <span class="courses__item-level courses__item-level--advanced">Advanced</span>
+              <span class="courses__item-lessons">24 урока</span>
+            </div>
+              <p class="courses__item-text">Экстремум функции имеет интеллект. Цикл, не меняя концепции, изложенной выше, реально просветляет хорус.</p>
+              <button type="button" class="courses__item-btn btn-more">Подробнее</button>
             </div>
             <div class="courses__item-progress"><span></span></div>
 
           </li>
           <li class="courses__item courses__item--inactive">
             <div class="courses__item-top">
-              <p class="courses__item-title">Курс, который пока не подходит</p>
+              <div class="courses__item-descr">
+                <p class="courses__item-title">Курс, который пока не подходит</p>
+              </div>
+              <img src="assets/img/sport.jpg">
             </div>
             <div class="courses__item-bottom">
-              <p class="courses__item-text">На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.На этом уровне Вы изучите.</p>
-              <button type="button" class="courses__item-btn courses__item-btn--info">Подробнее</button>
-              <button type="button" class="courses__item-btn">Перейти</button>
+              <div class="courses__item-info">
+              <span class="courses__item-level courses__item-level--advanced">Advanced</span>
+              <span class="courses__item-lessons">24 урока</span>
+            </div>
+              <p class="courses__item-text">Экстремум функции имеет интеллект. Цикл, не меняя концепции, изложенной выше, реально просветляет хорус.</p>
+              <button type="button" class="courses__item-btn btn-more">Подробнее</button>
             </div>
             <div class="courses__item-progress"><span></span></div>
 
